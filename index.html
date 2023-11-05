@@ -25,11 +25,16 @@
 
 <script>
     $(document).ready(function () {
-        $('#outputButton').click(function () {
-            var inputText = $('#inputText').val(); 
-            $('#outputArea').text(inputText);
-            $('#outputArea').show();
-            $('#outputArea').addClass('animated bounce');
+    $('#outputButton').click(function () {
+        var inputText = $('#inputText').val();
+        $('#outputArea').text(inputText);
+        $('#outputArea').show();
+
+        $('#outputArea').addClass('animated bounce');
+
+        $('#outputArea').on('animationend', function () {
+            $(this).removeClass('animated bounce');
         });
     });
-    </script>
+});
+</script>
