@@ -22,27 +22,22 @@ footer {
     padding: 10px;
 }
 
-#outputContainer {
-    display: none;
-    text-align: center;
-    margin-top: 20px;
-}
-
-#outputText {
-    background-color: #0f7999;
-    padding: 10px;
+#inputText {
+    padding: 5px;
     border: 1px solid #ccc;
-    animation: bounce 1s infinite;
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
+#outputButton {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#outputArea {
+    background-color: #c91919;
+    padding: 10px;
+    margin-top: 10px;
+    display: none; 
 }

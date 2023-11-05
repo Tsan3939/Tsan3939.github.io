@@ -12,15 +12,29 @@
     <main>
         <p>我不知道要說甚麼</p>
         <div>
-            <input type="text" id="userInput" placeholder="你覺得我要說什麼">
+            <input type="text" id="inputText" placeholder="你覺得我要說什麼">
             <button id="outputButton">說</button>
         </div>
-        <div id="outputContainter" class="hidden">
-            <div id="outputText"></div>
-        </div>
+        <div id="outputArea"></div>
     </main>
     <footer>
         <p>&copy; 沒有路</p>
     </footer>
 </body>
 </html>
+
+<script>
+    $(document).ready(function () {
+        $('#outputButton').click(function () {
+            var inputText = $('#inputText').val(); 
+            $('#outputArea').text(inputText);
+            $('#outputArea').show();
+    
+            $('#outputArea').addClass('animated bounce');
+
+            $('#outputArea').on('animationend', function () {
+                $(this).removeClass('animated bounce');
+            });
+        });
+    });
+    </script>
