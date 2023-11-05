@@ -21,3 +21,37 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+.input-container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#textInput{
+    padding: 5px;
+    font-size: 16px;
+}
+
+#outputButton{
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.output-container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#outputText{
+    display: none;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.animate{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
