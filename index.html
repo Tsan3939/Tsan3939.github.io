@@ -29,12 +29,7 @@
             var inputText = $('#inputText').val(); 
             $('#outputArea').text(inputText);
             $('#outputArea').show();
-    
             $('#outputArea').addClass('animated bounce');
-
-            $('#outputArea').on('animationend', function () {
-                $(this).removeClass('animated bounce');
-            });
         });
     });
     </script>
